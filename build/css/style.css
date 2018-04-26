@@ -98,10 +98,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-/*-------------------------------Global End------------------------------------------------------------------------- */
-/*-------------------------------Header Start------------------------------------------------------------------------- */
-header {
-  height: 50%;
+.bodycontainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,11 +106,46 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  width: 100%; }
+
+/*-------------------------------Global End------------------------------------------------------------------------- */
+/*-------------------------------Header Start------------------------------------------------------------------------- */
+header {
+  height: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  margin-top: 4rem; }
+
+#logo {
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+
+header p {
+  padding-bottom: 1rem;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal; }
 
 header::-moz-selection {
   height: 20%; }
@@ -125,7 +157,8 @@ header::selection {
 .nytSectionsContainer {
   webkit-border-radius: 5px;
   moz-border-radius: 5px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-left: 1rem; }
 
 /*-------------------------------Stories Start------------------------------------------------------------------------- */
 .storiesContainer {
@@ -177,17 +210,12 @@ header::selection {
 /*-------------------------------Stories End------------------------------------------------------------------------- */
 /*-------------------------------Footer Start------------------------------------------------------------------------- */
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
   color: #c2c2c2;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  vertical-align: baseline;
+  margin-bottom: 3rem;
+  font-size: .9rem;
+  margin-top: 4rem; }
 
 /*-------------------------------Footer End------------------------------------------------------------------------- */
 /* -----------------------------------------------------STARTING TABLET VERSION---------------------------------------------------------------- */
@@ -211,9 +239,77 @@ footer {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+  .bodycontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 100%;
+    width: 100%; }
   /*-------------------------------Global End------------------------------------------------------------------------- */
   /*-------------------------------Header Start------------------------------------------------------------------------- */
+  header {
+    height: 100%;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-right: 10rem; }
+  #logo img {
+    max-height: 170px;
+    max-width: 170px; }
+  #logo p {
+    padding-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  header p {
+    padding-bottom: 1rem; }
+  header::-moz-selection {
+    height: 20%; }
+  header::selection {
+    height: 20%; }
+  .selectwords {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   /*-------------------------------Header End------------------------------------------------------------------------- */
+  .nytSectionsContainer {
+    webkit-border-radius: 5px;
+    moz-border-radius: 5px;
+    border-radius: 5px; }
   /*-------------------------------Stories Start------------------------------------------------------------------------- */
   .storiesContainer {
     display: -webkit-box;
@@ -262,17 +358,12 @@ footer {
   /*-------------------------------Stories End------------------------------------------------------------------------- */
   /*-------------------------------Footer Start------------------------------------------------------------------------- */
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    text-align: center;
     color: #c2c2c2;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    vertical-align: baseline;
+    margin-bottom: 3rem;
+    font-size: .9rem;
+    margin-top: 3rem; }
   /*-------------------------------Footer End------------------------------------------------------------------------- */ }
 
 /* -----------------------------------------------------STARTING TABLET VERSION---------------------------------------------------------------- */
@@ -296,9 +387,77 @@ footer {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+  .bodycontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 100%;
+    width: 100%; }
   /*-------------------------------Global End------------------------------------------------------------------------- */
   /*-------------------------------Header Start------------------------------------------------------------------------- */
+  header {
+    height: 100%;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0rem; }
+  #logo img {
+    max-height: 220px;
+    max-width: 220px; }
+  #logo p {
+    padding-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  header p {
+    padding-bottom: 1rem; }
+  header::-moz-selection {
+    height: 20%; }
+  header::selection {
+    height: 20%; }
+  .selectwords {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 6rem; }
   /*-------------------------------Header End------------------------------------------------------------------------- */
+  .nytSectionsContainer {
+    webkit-border-radius: 5px;
+    moz-border-radius: 5px;
+    border-radius: 5px; }
   /*-------------------------------Stories Start------------------------------------------------------------------------- */
   .storiesContainer {
     display: -webkit-box;
@@ -318,7 +477,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 300px;
+    height: 420px;
     position: relative;
     width: 25%; }
   .storyPackages img {
@@ -347,15 +506,11 @@ footer {
   /*-------------------------------Stories End------------------------------------------------------------------------- */
   /*-------------------------------Footer Start------------------------------------------------------------------------- */
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    text-align: left;
     color: #c2c2c2;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    vertical-align: baseline;
+    margin-bottom: 3rem;
+    font-size: .9rem;
+    margin-top: 3rem;
+    margin-left: 3rem; }
   /*-------------------------------Footer End------------------------------------------------------------------------- */ }
