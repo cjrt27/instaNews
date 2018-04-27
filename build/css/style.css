@@ -211,15 +211,14 @@ footer {
 @media all and (min-width: 600px) and (max-width: 1239px) {
   /*-------------------------------Global Start------------------------------------------------------------------------- */
   body {
+    height: 100vh;
     background: black;
     color: #FFFFFF;
-    height: 100vh;
     font-size: 16px;
     font-family: 'Open Sans';
     font-weight: 300;
     font-style: normal; }
   .bodycontainer {
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -227,9 +226,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center; }
   /*-------------------------------Global End------------------------------------------------------------------------- */
@@ -245,12 +244,15 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0rem;
     padding: 2rem;
-    height: 90%;
-    width: 90%; }
+    height: 875px;
+    width: 700px; }
   #logo img {
     max-height: 170px;
     max-width: 170px; }
@@ -296,7 +298,8 @@ footer {
             flex-direction: row;
     height: 300px;
     position: relative;
-    width: 33.33%; }
+    width: 33.33%;
+    min-width: 33.33%; }
   .storyPackages img {
     height: 100%;
     width: 100%;
@@ -325,16 +328,15 @@ footer {
   footer {
     text-align: center;
     color: #c2c2c2;
-    vertical-align: baseline;
     margin-bottom: 3rem;
     font-size: .9rem;
     margin-top: 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   /*-------------------------------Footer End------------------------------------------------------------------------- */ }
 
 /* -----------------------------------------------------STARTING TABLET VERSION---------------------------------------------------------------- */
