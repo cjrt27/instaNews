@@ -345,14 +345,12 @@ footer {
   body {
     background: black;
     color: #FFFFFF;
-    width: 100%;
     height: 100vh;
     font-size: 16px;
     font-family: 'Open Sans';
     font-weight: 300;
     font-style: normal; }
   .bodycontainer {
-    height: 100%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -361,21 +359,29 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center; }
   /*-------------------------------Global End------------------------------------------------------------------------- */
   /*-------------------------------Header Start------------------------------------------------------------------------- */
   header {
-    height: 100%;
+    height: 700px;
+    min-width: 1300px;
     padding: 2rem;
     margin-top: 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   #logo img {
     max-height: 220px;
     max-width: 220px; }
@@ -415,7 +421,8 @@ footer {
             flex-direction: row;
     height: 420px;
     position: relative;
-    width: 25%; }
+    width: 25%;
+    min-width: 25%; }
   .storyPackages img {
     height: 100%;
     width: 100%;
