@@ -21,11 +21,7 @@ $.ajax({
   $.each(rawDataNyt.results, function(key, value) {
     var img= value.multimedia[4].url
     var abstract= value.abstract
-    var url= value.url
-  
-  // div > a within a = p > img > div 
-  // img in background, text in front of it, url linked to text
-  
+    var url= value.url  
     $(".storiesContainer").append(
       "<div class='storyPackages'><img src="
       +"'" 
@@ -37,14 +33,10 @@ $.ajax({
                     + abstract 
                         + "</p></a>" 
                             +"</div>");
-  
-return key<11;
-  
+  return key<11;
   })
-  
-});
-
-})
+  });
+  })
 
 
 $("select").on("change", function(event) {
@@ -61,7 +53,7 @@ else if(screen.width >="600" && screen.width <= "1239") {
     $("footer").css({"margin-top":"3rem"});
 }
 else if(screen.width >="1240" && screen.width <= "8000") {
-  $(".header").css({"margin-top":"0rem","max-height":"200px", "margin-right":"0rem"})  
+  $(".header").css({"margin-top":"0rem","max-height":"70px", "margin-right":"0rem", "padding":"2rem"})  
   $("#logo").css({"margin-right":"0rem", "padding-bottom": "0rem", "max-width":"70px","max-height":"70px"})
   $(".header img").css({"height": "100%","width":"100%", "margin":"0rem"})
   $("footer").css({"margin-top":"3rem"});
