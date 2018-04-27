@@ -41,13 +41,13 @@ $.ajax({
 
 $("select").on("change", function(event) {
 if(screen.width <= "599") { 
-$(".header").css({"margin-top":"1rem","max-height":"200px"})  
+$(".header").css({"max-height":"210px"})  
 $("#logo").css({"text-align":"center"})
 $(".header img").css({"height": "50%","width":"50%", "margin":"auto"})
-$("footer").css({});
+$("footer").css({"margin-top":"20px"});
 }
 else if(screen.width >="600" && screen.width <= "1239") {
-    $(".header").css({"margin-top":"0rem","max-height":"200px", "margin-right":"20rem"})  
+    $(".header").css({"width":"535px","margin-top":"0rem","max-height":"70px","display":"flex","justify-content":"flex-start"})  
     $("#logo").css({"text-align":"center", "margin-right":"3rem", "max-width":"134px"})
     $(".header img").css({"height": "50%","width":"50%", "margin":"auto"})
     $("footer").css({"margin-top":"3rem"});
