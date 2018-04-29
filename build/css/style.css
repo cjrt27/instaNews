@@ -159,6 +159,15 @@ header::selection {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.gif {
+  height: 38px;
+  width: 38px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 .storyPackages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,6 +297,14 @@ footer {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+  .gif {
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   .storyPackages {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -411,6 +428,14 @@ footer {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+  .gif {
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   .storyPackages {
     display: -webkit-box;
     display: -ms-flexbox;

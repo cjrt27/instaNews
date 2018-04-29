@@ -1,16 +1,16 @@
 $(function() {
 
-  
-
-
- var rawDataNyt =""
+var rawDataNyt =""
 
 $("select").on('change', function() {
- // add empty container here to the div that you add the below to gif function to
- // add function here which creates div which you then put gif into and then use animate to get it to run 
+ 
+  $(".gif" ).empty();
+ 
+  $(".storiesContainer").append("<img src='project-02/assets/images/ajax-loader.gif' alt='gif' class='gif'>")
+  
  
   var sections = $('select[name=selector]').val()
-    var url = "https://api.nytimes.com/svc/topstories/v2/" + sections + ".json";
+  var url = "https://api.nytimes.com/svc/topstories/v2/" + sections + ".json";
 url += '?' + $.param({
   'api-key': "69cbc8f4739f440b86f94a43bdd196a4"
 });
@@ -18,7 +18,6 @@ $.ajax({
   url: url,
   method: 'GET',
 }).done(function(rawDataNyt) {
-  // console.log(rawDataNyt.results);
 
   $( ".storiesContainer" ).empty();
 
