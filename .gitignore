@@ -67,5 +67,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+project2/instanews-desktop-initial.png
+project2/instanews-desktop-photos.png
+project2/instanews-mobile-initial.png
+project2/instanews-mobile-photos.png
+project2/instanews-tablet-initial.png
+project2/instanews-tablet-photos.png
+
 
 # End of https://www.gitignore.io/api/macos,linux,windows
