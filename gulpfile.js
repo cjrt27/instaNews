@@ -1,13 +1,13 @@
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-var browserSync = require('browser-sync');
-var eslint = require('gulp-eslint');
+var gulp = require("gulp");
+var uglify = require("gulp-uglify");
+var rename = require("gulp-rename");
+var browserSync = require("browser-sync");
+var eslint = require("gulp-eslint");
 
 var sass = require("gulp-sass"),
   autoprefixer = require("gulp-autoprefixer"),
-  cssnano = require("gulp-cssnano")
-  
+  cssnano = require("gulp-cssnano");
+
 gulp.task("sass", function() {
   return gulp
     .src("./sass/style.scss")
@@ -23,45 +23,41 @@ gulp.task("sass", function() {
     .pipe(gulp.dest("./build/css"));
 });
 
-gulp.task('scripts', function() {
+gulp.task("scripts", function() {
   return gulp
-    .src('./js/*.js')
+    .src("./js/*.js")
     .pipe(uglify())
     .pipe(
       rename({
-        extname: '.min.js'
+        extname: ".min.js"
       })
     )
-    .pipe(gulp.dest('./build/js'));
+    .pipe(gulp.dest("./build/js"));
 });
 
-gulp.task('say_hello', function() {
-  console.log('Hello!');
+gulp.task("watch", function() {
+  gulp.watch("js/*.js", gulp.series("scripts"));
+  gulp.watch("sass/*.scss", gulp.series("sass"));
 });
 
-gulp.task('watch', function() {
-  gulp.watch('js/*.js', gulp.series('scripts'));
-  gulp.watch('sass/*.scss', gulp.series('sass'));
-  
-});
-
-gulp.task('browser-sync', function() {
+gulp.task("browser-sync", function() {
   browserSync.init({
     server: {
-      baseDir: './'
+      baseDir: "./"
     }
   });
-  gulp.watch(['build/js/*.js', 'build/css/*.css'])
-  .on('change', browserSync.reload);
+  gulp
+    .watch(["build/js/*.js", "build/css/*.css"])
+    .on("change", browserSync.reload);
 });
 
-gulp.task('lint', function() {
+gulp.task("lint", function() {
   return gulp
-    .src(['/js/*.js'])
+    .src(["/js/*.js"])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError);
 });
 
 // Modify our default task method by passing an array of task names
-gulp.task('default', gulp.parallel('browser-sync', 'watch'));
+gulp.task("default", gulp.parallel("browser-sync", "watch"));

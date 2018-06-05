@@ -6,6 +6,8 @@ This webpage is fully compatable across all browsers and devices.
 
 The main challenge for this website was getting the API to the NYT website to work correctly.
 
+At the conclusion of this project, I can say that I learned a great deal about API's and also started to learn about Gulp.
+
 
 # Technologies Used
 * Git Bash (https://git-for-windows.github.io/)
